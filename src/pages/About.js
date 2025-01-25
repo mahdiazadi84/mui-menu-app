@@ -1,6 +1,9 @@
 import React from "react";
 import { Box, Typography, Grid, Card, CardContent, CardMedia } from "@mui/material";
-
+import c1 from './../assets/img/portfolio/portfolio-4.jpg'
+import team1 from "../assets/img/team/team-1.jpg";
+import team2 from "../assets/img/team/team-2.jpg";
+import team4 from "../assets/img/team/team-4.jpg";
 export default function About() {
   return (
     <Box sx={{ py: 8, px: 4 }}>
@@ -22,7 +25,7 @@ export default function About() {
         {/* تصویر درباره ما */}
         <Grid item xs={12} md={6}>
           <img
-            src="/path-to-about-image.jpg"
+            src={c1}
             alt="Our Team"
             style={{
               width: "100%",

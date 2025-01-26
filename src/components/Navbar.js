@@ -1,35 +1,20 @@
 import React from "react";
-import { AppBar, Toolbar, Box, Button } from "@mui/material";
-import { Home, Info, ContactMail, Login } from "@mui/icons-material";
+import { AppBar, Toolbar, Typography, Button, Box } from "@mui/material";
+import { Home, Info, Mail, Article, Login } from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";
 
 export default function Navbar() {
   const navigate = useNavigate();
 
   return (
-    <AppBar position="static">
-      <Toolbar
-        sx={{
-          display: "flex",
-          justifyContent: "flex-start",
-          gap: 2,
-        }}
-      >
-        {/* لوگو */}
-        
-
-        {/* گزینه‌های منو */}
-        <Box
-          sx={{
-            display: "flex",
-            gap: 2,
-          }}
-        >
+    <AppBar position="static" sx={{ backgroundColor: "#1976d2" }}>
+      <Toolbar sx={{ justifyContent: "flex-start", gap: 2 }}>
+        {/* گزینه های منو */}
+        <Box sx={{ display: "flex", gap: 2 }}>
           <Button
             startIcon={<Home />}
             color="inherit"
             onClick={() => navigate("/")}
-            sx={{ textTransform: "none" }}
           >
             Home
           </Button>
@@ -37,26 +22,32 @@ export default function Navbar() {
             startIcon={<Info />}
             color="inherit"
             onClick={() => navigate("/about")}
-            sx={{ textTransform: "none" }}
           >
             About
           </Button>
           <Button
-            startIcon={<ContactMail />}
+            startIcon={<Mail />}
             color="inherit"
             onClick={() => navigate("/contact")}
-            sx={{ textTransform: "none" }}
           >
             Contact
           </Button>
           <Button
+            startIcon={<Article />}
+            color="inherit"
+            onClick={() => navigate("/blog")}
+          >
+            Blog
+          </Button>
+          <Button style={{marginLeft:"700px"}}
             startIcon={<Login />}
             color="inherit"
             onClick={() => navigate("/login")}
-            sx={{ textTransform: "none" }}
           >
-            Login
+            Login/SignUp
           </Button>
+
+
         </Box>
       </Toolbar>
     </AppBar>

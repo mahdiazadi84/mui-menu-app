@@ -12,7 +12,7 @@ import { Phone, Email, LocationOn } from "@mui/icons-material";
 export default function Contact() {
   return (
     <Box  sx={{ py: 8, px: 4 }} >
-      <Typography variant="h4" fontWeight="bold" textAlign="center" paddingLeft={"0px"}  sx={{ mb: 6 }} >
+      <Typography variant="h4" fontWeight="bold" textAlign="left" paddingTop={"-50px"}  sx={{ mb: 6 }} >
         Contact Us
       </Typography>
       <Grid container spacing={4}>

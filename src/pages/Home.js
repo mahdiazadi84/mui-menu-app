@@ -4,9 +4,7 @@ import { ArrowForward } from "@mui/icons-material";
 import portfolio1 from "../assets/img/portfolio/portfolio-1.jpg";
 import portfolio2 from "../assets/img/portfolio/portfolio-2.jpg";
 import portfolio3 from "../assets/img/portfolio/portfolio-3.jpg";
-import portfolio4 from "../assets/img/portfolio/portfolio-4.jpg";
-import portfolio5 from "../assets/img/portfolio/portfolio-5.jpg";
-import portfolio6 from "../assets/img/portfolio/portfolio-6.jpg";
+
 import team3 from "../assets/img/team/team-3.jpg";
 export default function Home() {
   const cards = [
@@ -32,9 +30,9 @@ export default function Home() {
 
 
   return (
-    <><Box container >
+    <><Box container  >
       
-    </Box><Box>
+    </Box><Box  sx={{backgroundColor: "#f5f5f5"}}>
         {/* بخش قهرمان (Hero Section) */}
         <Box
         
@@ -44,7 +42,8 @@ export default function Home() {
             flexDirection: "column",
             justifyContent: "center",
             alignItems: "center",
-            backgroundColor: "yellow",
+           
+            backgroundColor: "#f5f5f5",
             backgroundSize: "cover",
             backgroundPosition: "center",
             color: "black",
@@ -70,7 +69,7 @@ export default function Home() {
         </Box>
 
 
-        <Grid container spacing={3} style={{marginTop:"35px"}}>
+        <Grid container spacing={3} style={{ backgroundColor: "#f5f5f5", paddingLeft:"75px"}}>
   {cards.map((card, index) => (
     <Grid item xs={12} sm={6} md={4} key={index}>
       <Card sx={{ maxWidth: 345, boxShadow: 3 }}>
@@ -100,76 +99,9 @@ export default function Home() {
 
 
 
-        {/* بخش کارت‌ها (Services Section) */}
-        <Box sx={{ py: 8, px: 4, backgroundColor: "#f5f5f5", marginTop:"60px" }}>
-          <Typography
-            variant="h4"
-            fontWeight="bold"
-            textAlign="center"
-            sx={{ mb: 6 }}
-          >
-            Our Services
-          </Typography>
-          <Grid container spacing={4}>
-            {/* کارت 1 */}
-            <Grid item xs={12} sm={6} md={4}>
-              <Card sx={{ maxWidth: 345, boxShadow: 3 }}>
-                <CardMedia
-                  component="img"
-                  height="140"
-                  image = {portfolio4}
-                  alt="Service 1" />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="div">
-                    Service 1
-                  </Typography>
-                  <Typography variant="body2" color="text.secondary">
-                    A brief description of your amazing service.
-                  </Typography>
-                </CardContent>
-              </Card>
-            </Grid>
-            {/* کارت 2 */}
-            <Grid item xs={12} sm={6} md={4}>
-              <Card sx={{ maxWidth: 345, boxShadow: 3 }}>
-                <CardMedia
-                  component="img"
-                  height="140"
-                  image = {portfolio5}
-                  alt="Service 2" />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="div">
-                    Service 2
-                  </Typography>
-                  <Typography variant="body2" color="text.secondary">
-                    A brief description of another amazing service.
-                  </Typography>
-                </CardContent>
-              </Card>
-            </Grid>
-            {/* کارت 3 */}
-            <Grid item xs={12} sm={6} md={4}>
-              <Card sx={{ maxWidth: 345, boxShadow: 3 }}>
-                <CardMedia
-                  component="img"
-                  height="140"
-                  image = {portfolio6}
-                  alt="Service 3" />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="div">
-                    Service 3
-                  </Typography>
-                  <Typography variant="body2" color="text.secondary">
-                    Another fantastic service description.
-                  </Typography>
-                </CardContent>
-              </Card>
-            </Grid>
-          </Grid>
-        </Box>
-
+       
         {/* بخش درباره ما (About Us Section) */}
-        <Box sx={{ py: 4, px: 4, backgroundColor: "#1976d2", color: "white" }}>
+        <Box sx={{ py: 4, px: 4, backgroundColor: "pink", color: "white", marginTop:"70px" }}>
           <Grid container spacing={4} alignItems="center">
             <Grid item xs={12} md={6}>
               <img
@@ -197,8 +129,8 @@ export default function Home() {
           sx={{
             py: 8,
             textAlign: "center",
-            backgroundColor: "white",
-            color: "black",
+            backgroundColor: "#1976d2",
+            color: "black"
           }}
         >
           <Typography variant="h4" fontWeight="bold" sx={{ mb: 2 }}>

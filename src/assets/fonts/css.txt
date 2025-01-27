@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+    font-family: 'BYekan';
+    src:url('fonts/BYekan.eot?#') format('eot'),    
+          url('fonts/BYekan.woff') format('woff'),
+          url('fonts/BYekan.ttf') format('truetype'); 
+}
+
